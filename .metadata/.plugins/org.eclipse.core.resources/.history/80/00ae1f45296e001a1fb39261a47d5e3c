@@ -1,0 +1,21 @@
+package reedMaker;
+
+import java.io.*;
+
+public class Main {
+	
+	public static void main(String[] arg) throws IOException,  
+    											 InterruptedException  
+    { 
+		File file = new File("openscad");
+		System.out.println(file.getAbsolutePath());
+		//ProcessBuilder pb = new ProcessBuilder("reedMaker/bin/openscad/openscad",
+			     							   //"-o", "reedMaker/stl/my_reed.stl",
+			     							   //"-D", "length=180",
+			     							   //"reedMaker/data/reed.scad");
+		//Process process = pb.start();
+		//process.waitFor();
+		
+		//System.out.println("STL file generated!");
+    }
+}

@@ -1,0 +1,39 @@
+package application;
+
+import java.net.URL;
+import java.util.ResourceBundle;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.*;
+
+public class buildMyReedController implements Initializable{
+	 @FXML
+	 private TextField rLength;
+	 @FXML
+	 private TextField tRound;
+	 @FXML
+	 private TextField tThickness;
+	 @FXML
+	 private TextField rWidth;
+	 @FXML
+	 private Button cButton;
+	 @Override
+	 public void initialize(URL location, ResourceBundle resources) {
+		// TODO Auto-generated method stub
+		
+	 }
+	 
+	 public void showDateTime(ActionEvent event) {
+	       System.out.println("Button Clicked!");
+
+	       rLength.setText("Button Clicked!");
+	       tRound.setText("Button Clicked!");
+	       tThickness.setText("Button Clicked!");
+	       rWidth.setText("Button Clicked!");
+
+	   }
+
+
+}

@@ -1,0 +1,8 @@
+package reedMaker;
+
+public class Main {
+	ProcessBuilder pb = new ProcessBuilder("/bin/openscad/openscad",
+		     							   "-o", "/stl/my_reed.stl",
+		     							   "-D", "quality=\"production\"",
+		     							   "/data/reed.scad");
+}
