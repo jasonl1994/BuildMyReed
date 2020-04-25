@@ -1,1 +1,68 @@
 /* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.anchor {
+    -fx-background-image:url("./saxophone-reed.jpg");
+    -fx-background-repeat: stretch;
+}
+
+.main-label {
+	-fx-background-color: rgb(35, 128, 168);
+	-fx-font-size: 20px;
+	-fx-text-fill: WHITE;
+	-fx-font-style: italic;
+	-fx-border-radius: 5 5 5 5;
+    -fx-background-radius: 5 5 5 5;
+    -fx-padding: 8 8 8 8;
+}
+
+.faq-label {
+	-fx-background-color: rgb(12, 196, 168);
+	-fx-font-size: 20px;
+	-fx-text-fill: WHITE;
+	-fx-font-style: italic;
+	-fx-border-radius: 5 5 5 5;
+    -fx-background-radius: 5 5 5 5;
+    -fx-padding: 8 8 8 8;
+}
+
+.button-raised{
+    -fx-padding: 0.5em 0.4em;
+    -fx-font-size: 14px;
+    -jfx-button-type: RAISED;
+    -fx-background-color: rgb(77,102,204);
+    -fx-pref-width: 85;
+    -fx-text-fill: WHITE;
+}
+
+.button-dialog{
+    -fx-padding: 0.5em 0.4em;
+    -fx-font-size: 12px;
+    -fx-background-color: rgb(77,25,204);
+    -fx-pref-width: 100;
+    -fx-text-fill: WHITE;
+}
+
+.text-field {
+    -jfx-focus-color: #4059A9;
+    -jfx-unfocus-color: #4d4d4d;
+    -fx-padding: 0.333333em 0 0.333333em 0;
+    -fx-pref-width: 175;
+    -fx-text-fill: WHITE;
+    -fx-prompt-text-fill: WHITE;
+}
+
+.jfx-tab-pane .headers-region {
+	-fx-background-color: rgb(52, 101, 173);
+	-fx-border-radius: 0 0 10 10;
+	-fx-background-radius: 0 0 10 10;
+}
+
+.jfx-tab-pane .tab-header-background{
+    -fx-background-color: rgb(73, 75, 77);
+    -fx-border-radius: 0 0 10 10;
+    -fx-background-radius: 0 0 10 10;
+}
+
+.jfx-tab-pane .tab-header-area .jfx-rippler{
+    -jfx-rippler-fill: BLUE;
+    -fx-rippler-radius: 0 0 10 10;
+}

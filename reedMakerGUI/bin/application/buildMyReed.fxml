@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.shape.*?>
@@ -7,41 +10,24 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="344.0" prefWidth="514.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.buildMyReedController">
+<AnchorPane fx:id="anchorPane" prefHeight="450.0" prefWidth="600.0" styleClass="anchor" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.buildMyReedController">
    <children>
-      <Button fx:id="cButton" layoutX="395.0" layoutY="294.0" mnemonicParsing="false" onAction="#cButtonClicked" text="Create">
-         <font>
-            <Font name="Arial Bold" size="19.0" />
-         </font>
-      </Button>
-      <TextField fx:id="rLength" layoutX="240.0" layoutY="64.0" prefHeight="25.0" prefWidth="134.0" />
-      <Separator layoutX="14.0" layoutY="89.0" prefHeight="10.0" prefWidth="425.0" />
-      <Separator layoutX="14.0" layoutY="131.0" prefHeight="10.0" prefWidth="425.0" />
-      <Separator layoutX="14.0" layoutY="172.0" prefHeight="10.0" prefWidth="425.0" />
-      <Separator layoutX="14.0" layoutY="212.0" prefHeight="10.0" prefWidth="425.0" />
-      <TextField fx:id="tRound" layoutX="240.0" layoutY="106.0" prefHeight="25.0" prefWidth="134.0" />
-      <TextField fx:id="tThickness" layoutX="240.0" layoutY="147.0" prefHeight="25.0" prefWidth="134.0" />
-      <TextField fx:id="tWidth" layoutX="240.0" layoutY="187.0" prefHeight="25.0" prefWidth="134.0" />
-      <Separator layoutX="14.0" layoutY="47.0" prefHeight="10.0" prefWidth="425.0" />
-      <TextField editable="false" layoutX="14.0" layoutY="187.0" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: White;" text="Tip Width">
-         <font>
-            <Font name="Arial Italic" size="12.0" />
-         </font>
-      </TextField>
-      <TextField editable="false" layoutX="14.0" layoutY="106.0" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: White;" text="Tip Round">
-         <font>
-            <Font name="Arial Italic" size="12.0" />
-         </font>
-      </TextField>
-      <TextField editable="false" layoutX="14.0" layoutY="147.0" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: White;" text="Tip Thickness">
-         <font>
-            <Font name="Arial Italic" size="12.0" />
-         </font>
-      </TextField>
-      <TextField editable="false" layoutX="14.0" layoutY="65.0" prefHeight="23.0" prefWidth="98.0" style="-fx-background-color: White;" text="Reed Length">
-         <font>
-            <Font name="Arial Italic" size="12.0" />
-         </font>
-      </TextField>
+      <StackPane fx:id="stackPane" layoutX="14.0" layoutY="14.0" prefHeight="433.0" prefWidth="576.0">
+         <children>
+            <JFXButton fx:id="cButton" buttonType="RAISED" onAction="#cButtonClicked" prefHeight="41.0" prefWidth="97.0" ripplerFill="#3715a4" text="Create" StackPane.alignment="BOTTOM_RIGHT">
+               <font>
+                  <Font name="Georgia Bold Italic" size="18.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#1bb991" />
+                        <Stop color="#3e8fa3" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </JFXButton>
+         </children>
+      </StackPane>
    </children>
 </AnchorPane>
